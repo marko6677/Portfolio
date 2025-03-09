@@ -27,34 +27,35 @@ const Contact = () => {
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setLoading(true);
-		emailjs
-			.send(
-				"service_91ssn8g",
-				"template_jjegxdr",
-				{
-					from_name: form.name,
-					to_name: "Om Patel",
-					from_email: form.email,
-					to_email: "omunite21@gmail.com",
-					message: form.message,
-				},
-				"VeFeVdEHL9F9_i6xp",
-			)
-			.then(() => {
-				setLoading(false);
-				alert(
-					"A humble thanks for reaching me out. I will respond to you as soon as possible.",
-				);
-				setForm({
-					name: "",
-					email: "",
-					message: "",
-				});
-			})
-			.catch((error) => {
-				setLoading(false);
-				alert("Sorry!! Something went wrong!!");
-			});
+		alert("Sorry, this is portfolio website just related to upwork account, so can not contact via here.")
+		// emailjs
+		// 	.send(
+		// 		"service_91ssn8g",
+		// 		"template_jjegxdr",
+		// 		{
+		// 			from_name: form.name,
+		// 			to_name: "Vladyslav Markevych",
+		// 			from_email: form.email,
+		// 			to_email: "marko6677@gmail.com",
+		// 			message: form.message,
+		// 		},
+		// 		"VeFeVdEHL9F9_i6xp",
+		// 	)
+		// 	.then(() => {
+		// 		setLoading(false);
+		// 		alert(
+		// 			"A humble thanks for reaching me out. I will respond to you as soon as possible.",
+		// 		);
+		// 		setForm({
+		// 			name: "",
+		// 			email: "",
+		// 			message: "",
+		// 		});
+		// 	})
+		// 	.catch((error) => {
+		// 		setLoading(false);
+		// 		alert("Sorry!! Something went wrong!!");
+		// 	});
 	};
 
 	return (

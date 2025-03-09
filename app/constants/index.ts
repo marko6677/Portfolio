@@ -146,6 +146,45 @@ const experiences = [
 		],
 	},
 	{
+		title: "Lead Automation Developer",
+		company_name: "freelancer.com",
+		icon: "/company/freelancer.svg",
+		iconBg: "#383E56",
+		date: "2021 - Present",
+		points: [
+		  "Developed a comprehensive marketing ecosystem connecting MailChimp and HubSpot CRM with bi-directional data synchronization",
+		  "Orchestrated complex business processes across multiple services with conditional branching logic",
+		  "Developed end-to-end ETL pipeline for processing multi-dimensional data with reusable components",
+		  "Designed webhook-based system for WhatsApp with OpenAI integration and privacy-focused metrics collection"
+		],
+	  },
+	  {
+		title: "Blockchain Developer",
+		company_name: "freelancer.com",
+		icon: "/company/freelancer.svg",
+		iconBg: "#E6DEDD",
+		date: "2020 - Present",
+		points: [
+		  "Developed a celebrity PR & media platform with secure payment processing using Next.js & TailwindCSS",
+		  "Created a blockchain-powered auction system with TitanX blockchain integration for secure transactions",
+		  "Built multiple NFT platforms including minting websites and marketplaces with Ethereum-based smart contracts",
+		  "Implemented secure authentication and transaction systems across blockchain applications"
+		],
+	  },
+	  {
+		title: "Full Stack Developer",
+		company_name: "freelancer.com",
+		icon: "/company/freelancer.svg",
+		iconBg: "#383E56",
+		date: "2019 - Present",
+		points: [
+		  "Designed real-time data scraper for automated sports data collection with GraphQL & RESTful APIs",
+		  "Created AI-driven platform integrating OpenAI & Anthropic APIs for advanced text generation",
+		  "Designed modern & responsive coffee e-commerce platform with secure payment processing",
+		  "Developed multi-platform trading application for iOS, Android, and Web with real-time analytics"
+		],
+	  },
+	{
 		title: "Next.JS Developer",
 		company_name: "Sparkbright Engineering",
 		icon: "/company/sparkbright.webp",
@@ -225,9 +264,82 @@ const projects :{
 	}[];
 	image: string;
 	source_code_link?: string;
-	deploy_link: string;
-	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web"
+	deploy_link?: string;
+	video_link?: string;
+	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web" | "Automation"
 }[] = [
+	{
+		name: "North-American Dating App",
+		description:
+			"Make.com Scenario + NodeJS / Websocket Server + Frontend",
+		tags: [
+			{
+				name: "Make.com",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Stripe",
+				color: "green-text-gradient",
+			},
+			{
+				name: "Node.js / Websocket",
+				color: "red-text-gradient",
+			},
+			{
+				name: "Twilio",
+				color: "green-text-gradient",
+			},
+		],
+		image: "/projectimg/dateApp.png",
+		platform: "Web",
+		deploy_link: "https://passportclub.netlify.app/",
+	},
+	{
+		name: "WhatsApp / Chatgpt / Zapier Integration",
+		description:
+			"Developed conversational AI tool for coaching purposes, with functionalities including message handling, conversation tracking, and data storage",
+		tags: [
+			{
+				name: "Zapier",
+				color: "red-text-gradient",
+			},
+			{
+				name: "WhatsApp",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "ChatGpt",
+				color: "green-text-gradient",
+			},
+
+		],
+		image: "/projectimg/webhook_zap.png",
+		platform: "Web",
+		// deploy_link: "https://passportclub.netlify.app/",
+	},
+	{
+		name: "n8n Sales Analytics System",
+		description:
+			"comprehensive sales analytics system that processes data from multiple dimensions (customer, geography, product, etc.) to create a unified data model for business intelligence or reporting purposes.",
+		tags: [
+			{
+				name: "n8n",
+				color: "red-text-gradient",
+			},
+			{
+				name: "Hubspot",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Google sheet",
+				color: "green-text-gradient",
+			},
+
+		],
+		image: "/projectimg/n8n.png",
+		platform: "Web",
+		// deploy_link: "https://passportclub.netlify.app/",
+	},
 	{
 		name: "A.V.M Auto Portfolio",
 		description:
@@ -273,6 +385,76 @@ const projects :{
 		deploy_link: "https://celeblink.com/",
 	},
 	{
+		name: "Duplicate Website",
+		description:
+			"Duplicated website and redeployed with Laravel/Vue3 and integrated Instagram for fetching data.",
+		tags: [
+			{
+				name: "Laravel/Vue3",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "tailwind",
+				color: "green-text-gradient",
+			},
+			{
+				name: "Instagram API",
+				color: "red-text-gradient",
+			},
+		],
+		image: "/projectimg/roastedrevolution.png",
+		platform: "Web",
+		deploy_link: "https://roastedrevolution.ca/",
+	},
+	{
+		name: "Website Scraping",
+		description:
+			"Real-time Scrape new information and store to Database from existing Betwatch website by Python.",
+		tags: [
+			{
+				name: "Python",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "mongodb",
+				color: "green-text-gradient",
+			},
+			{
+				name: "Google Sheets Integration",
+				color: "red-text-gradient",
+			},
+		],
+		image: "/projectimg/betwatch.png",
+		platform: "Web",
+		deploy_link: "https://www.betwatch.com/",
+	},
+	{
+		name: "Shopify to HubSpot Event Sync",
+		description:
+			"Developed a Laravel-based system that listens for real-time Shopify events using webhooks, processes the data, and seamlessly updates HubSpot CRM.",
+		tags: [
+			{
+				name: "Laravel",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Shopify",
+				color: "green-text-gradient",
+			},
+			{
+				name: "Hubspot",
+				color: "red-text-gradient",
+			},
+			{
+				name: "Webhook",
+				color: "orange-text-gradient",
+			},
+		],
+		image: "/projectimg/shopify-webhook.png",
+		platform: "Web",
+		// deploy_link: "https://www.betwatch.com/",
+	},
+	{
 		name: "Sparkbright Engineering Portfolio",
 		description:
 			" Designed and developed a visually appealing and user-friendly portfolio website using Next.JS.",
@@ -294,6 +476,37 @@ const projects :{
 		source_code_link: "https://github.com/omunite215/React-Admin-DashBoard",
 		platform: "Web",
 		deploy_link: "https://sparkbright.in/",
+	},
+	
+	{
+		name: "Duplicate website + Wallet Integration",
+		description:
+			"Duplcated Volt.win website and integrated wallet using Wagmi",
+		tags: [
+			{
+				name: "React",
+				color: "red-text-gradient",
+			},
+			{
+				name: "tailwindcss",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "wagmi",
+				color: "green-text-gradient",
+			},
+			{
+				name: "blockchain",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "Smart Contract",
+				color: "blue-text-gradient",
+			},
+		],
+		image: "/projectimg/volt.png",
+		platform: "Web",
+		deploy_link: "https://app.volt.win",
 	},
 	{
 		name: "HooBank",
