@@ -173,45 +173,45 @@ const experiences = [
 ];
 
 const testimonials = [
-	{
-		id: 1,
-		testimonial:
-			"Behance is a social media platform owned by Adobe whose main focus is to showcase and discover creative work.",
-		name: "Om Patel",
-		image: "/socialmedia/behance.svg",
-		link: "https://www.behance.net/omthecreator",
-	},
+	// {
+	// 	id: 1,
+	// 	testimonial:
+	// 		"Behance is a social media platform owned by Adobe whose main focus is to showcase and discover creative work.",
+	// 	name: "Om Patel",
+	// 	image: "/socialmedia/behance.svg",
+	// 	link: "https://www.behance.net/omthecreator",
+	// },
 	{
 		id: 2,
 		testimonial:
 			"LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps.",
-		name: "Om Patel",
+		name: "Vladyslav Markevych",
 		image: "/socialmedia/linkedin.svg",
-		link: "https://www.linkedin.com/in/om-patel-401068143/",
+		link: "https://www.linkedin.com/in/vlad-markevych-811329349/",
 	},
-	{
-		id: 3,
-		testimonial:
-			"Dribbble is a self-promotion and social networking platform for digital designers and creatives. It serves as a design portfolio.",
-		name: "Om Patel",
-		image: "/socialmedia/dribble.svg",
-		link: "https://dribbble.com/om2121",
-	},
-	{
-		id: 4,
-		testimonial:
-			"Also do check out my UI/UX Portfolio where I have shared by design studies.",
-		name: "Om Patel",
-		image: "/socialmedia/portfolio.svg",
-		link: "https://omthecreator.netlify.app/",
-	},
+	// {
+	// 	id: 3,
+	// 	testimonial:
+	// 		"Dribbble is a self-promotion and social networking platform for digital designers and creatives. It serves as a design portfolio.",
+	// 	name: "Om Patel",
+	// 	image: "/socialmedia/dribble.svg",
+	// 	link: "https://dribbble.com/om2121",
+	// },
+	// {
+	// 	id: 4,
+	// 	testimonial:
+	// 		"Also do check out my UI/UX Portfolio where I have shared by design studies.",
+	// 	name: "Om Patel",
+	// 	image: "/socialmedia/portfolio.svg",
+	// 	link: "https://omthecreator.netlify.app/",
+	// },
 	{
 		id: 5,
 		testimonial:
 			"Also do check out my Github Profile where I have shared all my codes from basic to advanced.",
-		name: "Om Patel",
+		name: "Vladyslav Markevych",
 		image: "/tech/github.webp",
-		link: "https://github.com/omunite215",
+		link: "https://github.com/marko6677",
 	},
 ];
 
@@ -245,6 +245,32 @@ const projects :{
 		image: "/projectimg/avm.webp",
 		platform: "Wordpress",
 		deploy_link: "https://avmauto.in/",
+	},
+	{
+		name: "Celebrity Link Website",
+		description:
+			"A Designed and developed a visually appealing and user-friendly Celebrity Website with NextJS/Tailwindcss.",
+		tags: [
+			{
+				name: "next",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "tailwind",
+				color: "green-text-gradient",
+			},
+			{
+				name: "Postgre",
+				color: "red-text-gradient",
+			},
+			{
+				name: "Stripe",
+				color: "blue-text-gradient",
+			},
+		],
+		image: "/projectimg/celeblink.png",
+		platform: "Web",
+		deploy_link: "https://celeblink.com/",
 	},
 	{
 		name: "Sparkbright Engineering Portfolio",
