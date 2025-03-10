@@ -256,6 +256,7 @@ const testimonials = [
 
 
 const projects :{
+	id: number,
 	name: string;
 	description: string;
 	tags: {
@@ -269,6 +270,7 @@ const projects :{
 	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web" | "Automation"
 }[] = [
 	{
+		id: 1,
 		name: "North-American Dating App",
 		description:
 			"Make.com Scenario + NodeJS / Websocket Server + Frontend",
@@ -295,6 +297,7 @@ const projects :{
 		deploy_link: "https://passportclub.netlify.app/",
 	},
 	{
+		id: 2,
 		name: "WhatsApp / Chatgpt / Zapier Integration",
 		description:
 			"Developed conversational AI tool for coaching purposes, with functionalities including message handling, conversation tracking, and data storage",
@@ -314,10 +317,11 @@ const projects :{
 
 		],
 		image: "/projectimg/webhook_zap.png",
-		platform: "Web",
+		platform: "Automation",
 		// deploy_link: "https://passportclub.netlify.app/",
 	},
 	{
+		id: 3,
 		name: "n8n Sales Analytics System",
 		description:
 			"comprehensive sales analytics system that processes data from multiple dimensions (customer, geography, product, etc.) to create a unified data model for business intelligence or reporting purposes.",
@@ -341,6 +345,7 @@ const projects :{
 		// deploy_link: "https://passportclub.netlify.app/",
 	},
 	{
+		id: 4,
 		name: "A.V.M Auto Portfolio",
 		description:
 			"A Designed and developed a visually appealing and user-friendly portfolio website using WordPress.",
@@ -359,6 +364,7 @@ const projects :{
 		deploy_link: "https://avmauto.in/",
 	},
 	{
+		id: 5,
 		name: "Celebrity Link Website",
 		description:
 			"A Designed and developed a visually appealing and user-friendly Celebrity Website with NextJS/Tailwindcss.",
@@ -385,6 +391,7 @@ const projects :{
 		deploy_link: "https://celeblink.com/",
 	},
 	{
+		id: 6,
 		name: "Duplicate Website",
 		description:
 			"Duplicated website and redeployed with Laravel/Vue3 and integrated Instagram for fetching data.",
@@ -407,6 +414,7 @@ const projects :{
 		deploy_link: "https://roastedrevolution.ca/",
 	},
 	{
+		id: 7,
 		name: "Website Scraping",
 		description:
 			"Real-time Scrape new information and store to Database from existing Betwatch website by Python.",
@@ -429,6 +437,7 @@ const projects :{
 		deploy_link: "https://www.betwatch.com/",
 	},
 	{
+		id: 8,
 		name: "Shopify to HubSpot Event Sync",
 		description:
 			"Developed a Laravel-based system that listens for real-time Shopify events using webhooks, processes the data, and seamlessly updates HubSpot CRM.",
@@ -455,6 +464,7 @@ const projects :{
 		// deploy_link: "https://www.betwatch.com/",
 	},
 	{
+		id: 9,
 		name: "Sparkbright Engineering Portfolio",
 		description:
 			" Designed and developed a visually appealing and user-friendly portfolio website using Next.JS.",
@@ -473,12 +483,13 @@ const projects :{
 			},
 		],
 		image: "/projectimg/sparkbright.png",
-		source_code_link: "https://github.com/omunite215/React-Admin-DashBoard",
+		source_code_link: "https://github.com/marko6677/react-dashboard",
 		platform: "Web",
 		deploy_link: "https://sparkbright.in/",
 	},
 	
 	{
+		id: 10,
 		name: "Duplicate website + Wallet Integration",
 		description:
 			"Duplcated Volt.win website and integrated wallet using Wagmi",
@@ -509,6 +520,7 @@ const projects :{
 		deploy_link: "https://app.volt.win",
 	},
 	{
+		id: 11,
 		name: "HooBank",
 		description:
 			"A responsive Bank HomePage showcasing different features such as various payment gateways integration, easy money transfer, advanced security, etc. It has a beautiful interface made using Tailwind CSS and React",
@@ -523,11 +535,12 @@ const projects :{
 			},
 		],
 		image: "/projectimg/hoobank.webp",
-		source_code_link: "https://github.com/omunite215/hoobank",
+		source_code_link: "https://github.com/marko6677/hookbank",
 		platform: "Vercel",
 		deploy_link: "https://hoobankbyom.netlify.app/",
 	},
 	{
+		id: 12,
 		name: "MERN Dashboard",
 		description:
 			" Designed and developed a visually appealing and user-friendly Data Analytics Dashboard using MERN",
@@ -550,11 +563,12 @@ const projects :{
 			},
 		],
 		image: "/projectimg/mern.png",
-		source_code_link: "https://github.com/omunite215/Project_MERN-Dashboard",
+		source_code_link: "https://github.com/marko6677/dashboard",
 		platform: "Web",
 		deploy_link: "https://admin-frontend-r705.onrender.com/",
 	},
 	{
+		id: 13,
 		name: "Metaverse Web 3.0",
 		description:
 			"A Modern UI/UX Landing Page using Framer Motion and TailwindCSS with a feel and looks of Web 3.0",
@@ -573,11 +587,12 @@ const projects :{
 			},
 		],
 		image: "/projectimg/metaverse.png",
-		source_code_link: "https://github.com/omunite215/Project_Metaverse",
+		source_code_link: "https://github.com/marko6677/web3-integration",
 		platform: "Vercel",
 		deploy_link: "https://project-metaverse-beta.vercel.app/",
 	},
 	{
+		id: 14,
 		name: "Issue Tracker",
 		description:
 			"A Next.JS Full Stack Issue Tracker made using Next.Js, ShadCN UI, Prisma, mySQL with latest features like Next.JS Server Components, and Serverless features.",
@@ -600,7 +615,7 @@ const projects :{
 			},
 		],
 		image: "/projectimg/issuetracker.png",
-		source_code_link: "https://github.com/omunite215/Project_Issue-Tracker",
+		source_code_link: "https://github.com/marko6677/issue-tracker",
 		platform: "Vercel",
 		deploy_link: "https://project-issue-tracker.vercel.app/",
 	},

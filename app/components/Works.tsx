@@ -2,14 +2,16 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { Tilt } from "react-tilt";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "./HigherOrderComponents";
+import { useRouter } from "next/navigation";
+import React, { useState } from "react";
 
 type ProjectCardProps = {
 	index: number;
+	id: number;
 	name: string;
 	description: string;
 	tags: {
@@ -25,6 +27,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({
 	index,
+	id,
 	name,
 	description,
 	tags,
@@ -34,8 +37,20 @@ const ProjectCard = ({
 	video_link,
 	platform
 }: ProjectCardProps) => {
+	const router = useRouter();
+	const [isHovered, setIsHovered] = useState(false);
+
+	const handleCardClick = () => {
+		router.push(`/projects/${id}`);
+	};
 	return (
-		<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+		<motion.div 
+			variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+			onMouseEnter={() => setIsHovered(true)}
+			onMouseLeave={() => setIsHovered(false)}
+			className="cursor-pointer"
+			onClick={handleCardClick}
+		>
 			<Tilt
 				options={{
 					max: 45,
@@ -109,7 +124,6 @@ const ProjectCard = ({
 		</motion.div>
 	);
 };
-
 const Works = () => {
 	return (
 		<>
